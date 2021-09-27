@@ -1,0 +1,278 @@
+@font-face { font-family: 'Mechanismo'; src: url('MechanismoRegular.otf'); } 
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+
+}
+
+body{
+/*     font-family: 'Mechanismo', sans-serif;
+    font-family: 'Changa', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    
+    /* background-color: #faefe5; */
+
+    background-color: #000;
+    color: white;
+}
+
+.header{
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/assets//img/main-theme-01-3.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+h1{
+    padding: 20px;
+    font-weight: 700;
+    color: white;
+    font-size: 60px;
+}
+
+.intro-textbox{
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Changa', sans-serif;
+    font-weight: 800;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    width: 20%;
+    transform: translate(70% 70%);
+    text-align: center;
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+}
+
+.mint-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 30px;
+    font: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.mint-button:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+@media (max-width: 600px) {
+
+    h1{
+        padding: 20px;
+        font-weight: 700;
+        color: white;
+        font-size: 30px;
+    }
+
+    .intro-textbox{
+        font-family: 'Changa', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 45%;
+        transform: translate(70% 70%);
+        text-align: center;
+    
+    }
+
+
+    nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 100px;
+        top: 0;
+        right: -100px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-links{
+        padding: 20px;
+    }
+
+    .row-attributes{
+        border: 1px yellowgreen solid;
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .div-col-para{
+        width: 100%;
+        height: auto;
+    }
+    
+    
+}
+
+/* Attributes Sections */
+
+.attributes-section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+.attributes-section h4 {
+    font-size: 22px;
+}
+
+.attributes-row{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.attributes-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.attributes-col img{
+    border: 8px solid white;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.attributes-col p {
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.attributes-col h3{
+    text-align: left;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+
+    .attributes-row{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
+
+
+/* Weapon Section */
+
+.weapon-section {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    background-image: url('/assets/img/main-theme-02-3.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    
+    /* background-color: #1F1F1F; */
+}
+
+.weapon-section h4 {
+    font-size: 22px;
+}
+
+
+/* Gallery Section */
+
+.gallery-section{
+    width: 80%;
+    height: 100%;
+    padding-top: 60px;
+    margin: auto;
+    text-align: center;
+}
+
+.gallery-section div {
+    margin-bottom: 30px;
+}
+
+.gallery-section div h4 {
+    font-size: 22px;
+} 
+
+.gallery-section div img{
+    border: 5px solid white;
+    border-radius: 5px;
+        
+}
